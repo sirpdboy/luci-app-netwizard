@@ -8,8 +8,8 @@
 include $(TOPDIR)/rules.mk
 
 PKG_NAME:=luci-app-wizard
-PKG_VERSION:=1.0.1
-PKG_RELEASE:=1
+PKG_VERSION:=1.0
+PKG_RELEASE:=2
 
 PKG_LICENSE:=GPLv3
 PKG_LICENSE_FILES:=LICENSE
@@ -24,7 +24,6 @@ define Package/luci-app-wizard
 	SUBMENU:=Configuration Wizard Support
 	TITLE:=LuCI Support for wizard
 	PKGARCH:=all
-	DEPENDS:=
 endef
 
 define Package/luci-app-wizard/description
@@ -51,8 +50,8 @@ define Package/luci-app-wizard/postinst
 if [ -z "$$IPKG_INSTROOT" ]; then
   ( . /etc/uci-defaults/40_luci-app-wizard )
   rm -f /etc/uci-defaults/40_luci-app-wizard
-  ( . /etc/uci-defaults/96-wizard-defaults )
-  rm -f /etc/uci-defaults/96-wizard-defaults
+  ( . /etc/uci-defaults/96-uci-defaults )
+  rm -f /etc/uci-defaults/96-uci-defaults
 
   rm -rf /tmp/luci-indexcache /tmp/luci-modulecache
 fi
@@ -64,7 +63,7 @@ define Package/luci-app-wizard/install
 	$(INSTALL_DIR) $(1)/usr/lib/lua/luci/i18n
 	$(INSTALL_DATA) $(PKG_BUILD_DIR)/wizard.*.lmo $(1)/usr/lib/lua/luci/i18n/
 	$(INSTALL_DIR) $(1)/usr/lib/lua/luci/controller
-	$(INSTALL_DATA) ./files/luci/controller/*.lua $(1)/usr/lib/lua/luci/controller/
+	$(INSTALL_DATA) ./files/luci/controller/wizard.lua $(1)/usr/lib/lua/luci/controller/admin/
 	$(INSTALL_DIR) $(1)/usr/lib/lua/luci/model/cbi/wizard
 	$(INSTALL_DATA) ./files/luci/model/cbi/wizard/*.lua $(1)/usr/lib/lua/luci/model/cbi/wizard/
 	$(INSTALL_DIR) $(1)/etc/config
@@ -73,7 +72,7 @@ define Package/luci-app-wizard/install
 	$(INSTALL_BIN) ./files/root/etc/init.d/wizard $(1)/etc/init.d/wizard
 	$(INSTALL_DIR) $(1)/etc/uci-defaults
 	$(INSTALL_DATA) ./files/root/etc/uci-defaults/40_luci-app-wizard $(1)/etc/uci-defaults/40_luci-app-wizard
-	$(INSTALL_DATA) ./files/uci.defaults $(1)/etc/uci-defaults/96-wizard-defaults
+	$(INSTALL_DATA) ./files/uci.defaults $(1)/etc/uci-defaults/96-uci-defaults
 endef
 
 $(eval $(call BuildPackage,luci-app-wizard))
