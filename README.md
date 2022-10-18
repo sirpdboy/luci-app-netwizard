@@ -37,6 +37,15 @@
  
  3.  在原版的基本上重写代码和界面分布功能。
  
+ ## 界面
+
+![screenshots](https://raw.githubusercontent.com/sirpdboy/openwrt/master/doc/wizard1.jpg)
+
+![screenshots](https://raw.githubusercontent.com/sirpdboy/openwrt/master/doc/wizard2.jpg)
+
+![screenshots](https://raw.githubusercontent.com/sirpdboy/openwrt/master/doc/wizard3.jpg)
+
+
 ---------------
  ![screenshots](https://raw.githubusercontent.com/sirpdboy/openwrt/master/doc/说明2.jpg)
  
