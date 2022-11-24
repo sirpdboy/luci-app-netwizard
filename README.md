@@ -1,3 +1,4 @@
+## 访问数：[![](https://visitor-badge.glitch.me/badge?page_id=sirpdboy-visitor-badge)] [![](https://img.shields.io/badge/TG群-点击加入-FFFFFF.svg)](https://t.me/joinchat/AAAAAEpRF88NfOK5vBXGBQ)
 
 ![screenshots](https://raw.githubusercontent.com/sirpdboy/openwrt/master/doc/说明1.jpg)
 
@@ -57,7 +58,7 @@ kiddin9：https://github.com/kiddin9/luci-app-wizard
 
 # My other project
 
-网络速度测试 ：https://github.com/sirpdboy/NetSpeedTest
+网络速度测试 ：https://github.com/sirpdboy/NetSpeedTest     <img src="https://img.shields.io/github/downloads/sirpdboy/NetSpeedTest/total.svg?style=for-the-badge&color=32C955"/>
 
 定时设置插件 : https://github.com/sirpdboy/luci-app-autotimeset
 
@@ -71,9 +72,13 @@ btmob 主题: https://github.com/sirpdboy/luci-theme-btmob
 
 系统高级设置 : https://github.com/sirpdboy/luci-app-advanced
 
-ddns-go动态域名: https://github.com/sirpdboy/luci-app-ddns-go
+ddns-go动态域名: https://github.com/sirpdboy/luci-app-ddns-go     <img src="https://img.shields.io/github/downloads/sirpdboy/luci-app-ddns-go/total.svg?style=for-the-badge&color=32C955"/>
 
+lucky大吉: https://github.com/sirpdboy/luci-app-lucky     <img src="https://img.shields.io/github/downloads/sirpdboy/luci-app-lucky/total.svg?style=for-the-badge&color=32C955"/>
 
+一键扩容：https://github.com/sirpdboy/luci-app-partexp    <img src="https://img.shields.io/github/downloads/sirpdboy/luci-app-partexp/total.svg?style=for-the-badge&color=32C955"/>
+
+网络设置向导：https://github.com/sirpdboy/luci-app-wizard    <img src="https://img.shields.io/github/downloads/sirpdboy/luci-app-wizard/total.svg?style=for-the-badge&color=32C955"/>
 ## 捐助
 
 ![screenshots](https://raw.githubusercontent.com/sirpdboy/openwrt/master/doc/说明3.jpg)
