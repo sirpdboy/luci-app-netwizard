@@ -38,6 +38,30 @@
  
  3.  在原版的基本上重写代码和界面分布功能。
  
+ ### 下载源码方法:
+
+ ```Brach
+ 
+    # 下载源码
+	
+    git clone https://github.com/sirpdboy/luci-app-wizard package/luci-app-wizard
+    make menuconfig
+	
+ ``` 
+### 配置菜单
+
+ ```Brach
+    make menuconfig
+	# 找到 LuCI -> Applications, 选择 luci-app-wizard, 保存后退出。
+ ``` 
+ 
+### 编译
+
+ ```Brach 
+    # 编译固件
+    make package/luci-app-wizard/compile V=s
+ ```
+ 
  ## 界面
 
 ![screenshots](https://raw.githubusercontent.com/sirpdboy/openwrt/master/doc/wizard1.jpg)
