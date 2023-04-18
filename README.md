@@ -80,29 +80,37 @@ x-wrt：https://github.com/x-wrt/com.x-wrt/tree/master/luci-app-wizard
 
 kiddin9：https://github.com/kiddin9/luci-app-wizard
 
+## 使用与授权相关说明
+ 
+- 本人开源的所有源码，任何引用需注明本处出处，如需修改二次发布必告之本人，未经许可不得做于任何商用用途。
+
+
 # My other project
 
-网络速度测试 ：https://github.com/sirpdboy/NetSpeedTest     <img src="https://img.shields.io/github/downloads/sirpdboy/NetSpeedTest/total.svg?style=for-the-badge&color=32C955"/>
+- 网络速度测试 ：https://github.com/sirpdboy/NetSpeedTest
 
-定时设置插件 : https://github.com/sirpdboy/luci-app-autotimeset
+- 定时设置插件 : https://github.com/sirpdboy/luci-app-autotimeset
 
-关机功能插件 : https://github.com/sirpdboy/luci-app-poweroffdevice
+- 关机功能插件 : https://github.com/sirpdboy/luci-app-poweroffdevice
 
-opentopd主题 : https://github.com/sirpdboy/luci-theme-opentopd
+- opentopd主题 : https://github.com/sirpdboy/luci-theme-opentopd
 
-opentoks 主题: https://github.com/sirpdboy/luci-theme-opentoks [仿KOOLSAHRE主题]
+- kucat 主题: https://github.com/sirpdboy/luci-theme-kucat
 
-btmob 主题: https://github.com/sirpdboy/luci-theme-btmob
+- 家长控制: https://github.com/sirpdboy/luci-theme-parentcontrol
 
-系统高级设置 : https://github.com/sirpdboy/luci-app-advanced
+- 系统高级设置 : https://github.com/sirpdboy/luci-app-advanced
 
-ddns-go动态域名: https://github.com/sirpdboy/luci-app-ddns-go     <img src="https://img.shields.io/github/downloads/sirpdboy/luci-app-ddns-go/total.svg?style=for-the-badge&color=32C955"/>
+- ddns-go动态域名: https://github.com/sirpdboy/luci-app-ddns-go
 
-lucky大吉: https://github.com/sirpdboy/luci-app-lucky     <img src="https://img.shields.io/github/downloads/sirpdboy/luci-app-lucky/total.svg?style=for-the-badge&color=32C955"/>
+- 进阶设置（系统高级设置+主题设置kucat/agron/opentopd）: https://github.com/sirpdboy/luci-app-advancedplus
 
-一键扩容：https://github.com/sirpdboy/luci-app-partexp    <img src="https://img.shields.io/github/downloads/sirpdboy/luci-app-partexp/total.svg?style=for-the-badge&color=32C955"/>
+- 设置向导: https://github.com/sirpdboy/luci-app-wizard
 
-网络设置向导：https://github.com/sirpdboy/luci-app-wizard    <img src="https://img.shields.io/github/downloads/sirpdboy/luci-app-wizard/total.svg?style=for-the-badge&color=32C955"/>
+- 分区扩容: https://github.com/sirpdboy/luci-app-partexp
+
+- lukcy大吉: https://github.com/sirpdboy/luci-app-lukcy
+
 ## 捐助
 
 ![screenshots](https://raw.githubusercontent.com/sirpdboy/openwrt/master/doc/说明3.jpg)
@@ -114,4 +122,3 @@ lucky大吉: https://github.com/sirpdboy/luci-app-lucky     <img src="https://im
 <a href="#readme">
     <img src="https://img.shields.io/badge/-返回顶部-orange.svg" alt="图飞了😂" title="返回顶部" align="right"/>
 </a>
-
