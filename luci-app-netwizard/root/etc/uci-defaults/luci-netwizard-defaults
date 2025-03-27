@@ -1,16 +1,6 @@
 #!/bin/sh
-for file in dhcp network firewall wireless; do
-    [ ! -f /etc/config/bk_$file -a -s /etc/config/$file ] && cp /etc/config/$file /etc/config/bk_$file
-done
-
-uci -q batch <<-EOF >/dev/null
-	delete ucitrack.@netwizard[-1]
-	add ucitrack netwizard
-	set ucitrack.@netwizard[-1].init=netwizard
-	commit ucitrack
-EOF
 [ -s /etc/config/netwizard ] || echo "config netwizard default" > /etc/config/netwizard
-IPADDR=` uci -q get bk_network.lan.ipaddr || 192.168.10.1` 
+IPADDR=` uci get network.lan.ipaddr 2>/dev/null` 
 [ $(uci -q get network.wan.proto) ] && uci -q set netwizard.default.wan_proto=`uci -q get network.wan.proto` || `uci -q set netwizard.default.wan_proto="siderouter"` 
 uci -q set netwizard.default.lan_ipaddr="${IPADDR}"
 uci -q set netwizard.default.lan_netmask=` uci -q get network.lan.netmask `

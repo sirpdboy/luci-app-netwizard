@@ -5,8 +5,8 @@ include $(TOPDIR)/rules.mk
 
 NAME:=netwizard
 PKG_NAME:=luci-app-$(NAME)
-PKG_VERSION:=1.9.1
-PKG_RELEASE:=20250317
+PKG_VERSION:=1.9.2
+PKG_RELEASE:=20250327
 
 PKG_LICENSE:=GPLv3
 PKG_LICENSE_FILES:=LICENSE
@@ -24,11 +24,6 @@ include $(TOPDIR)/feeds/luci/luci.mk
 
 define Package/luci-app-netwizard/postinst
 #!/bin/sh
-if [ -z "$$IPKG_INSTROOT" ]; then
-  ( . /etc/uci-defaults/luci-netwizard-defaults )
-  rm -f /etc/uci-defaults/luci-netwizard-defaults
-  rm -rf /tmp/luci*
-fi
-exit 0
+rm -rf /tmp/luci*
 endef
 # call BuildPackage - OpenWrt buildroot signature

@@ -138,7 +138,7 @@ e = s:taboption("wansetup", Flag, "ipv6",translate('Enable IPv6'))
 e.default = "0"
 
 lan_dhcp = s:taboption("wansetup", Flag, "lan_dhcp", translate("Disable DHCP Server"), translate("Selecting means that the DHCP server is not enabled. In a network, only one DHCP server is needed to allocate and manage client IPs. If it is a secondary route, it is recommended to turn off the primary routing DHCP server."))
-lan_dhcp.default = landhcp
+lan_dhcp.default = 0
 lan_dhcp.anonymous = false
 
 e = s:taboption("wansetup", Flag, "dnsset", translate("Enable DNS notifications (ipv4/ipv6)"),translate("Forcefully specify the DNS server for this router"))
