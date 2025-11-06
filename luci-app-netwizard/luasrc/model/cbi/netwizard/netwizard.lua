@@ -84,7 +84,6 @@ for _, iface in ipairs(ifaces) do
 	end
   end
 end
-wan_interface.default = wan_face
 
 wan_pppoe_user = s:taboption("wansetup", Value, "wan_pppoe_user", translate("PAP/CHAP username"))
 wan_pppoe_user:depends({wan_proto="pppoe"})
