@@ -34,19 +34,19 @@ msgid "Choose the connection mode that matches your network environment:"
 msgstr "选择与您的网络环境匹配的连接模式："
 
 msgid "PPPoE Dial-up"
-msgstr "PPPoE拨号"
+msgstr "宽带拨号连接"
 
 msgid "For ADSL or fiber broadband with username/password"
 msgstr "适用于需要用户名/密码的 ADSL 或光纤宽带"
 
 msgid "DHCP Client"
-msgstr "连接到路由器"
+msgstr "连接现有路由器"
 
 msgid "Connect to router and automatically obtain IP via DHCP"
 msgstr "连接到路由器并通过 DHCP 自动获取 IP"
 
 msgid "Side Router"
-msgstr "旁路路由"
+msgstr "配置为旁路由"
 
 msgid "Configure as side router in same network as main router"
 msgstr "配置为与主路由器在同一网络中的旁路路由"

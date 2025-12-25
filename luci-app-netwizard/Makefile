@@ -24,7 +24,6 @@ define Package/luci-app-netwizard
 	SUBMENU:=Configuration netWizard Support
 	TITLE:=LuCI Support for netwizard
 	PKGARCH:=all
-	DEPENDS:=+luci-base +rpcd-mod-iwinfo +libustream-mbedtls +ca-bundle
 endef
 
 define Package/luci-app-netwizard/description

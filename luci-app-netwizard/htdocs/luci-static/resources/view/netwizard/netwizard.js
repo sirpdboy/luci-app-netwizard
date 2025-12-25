@@ -118,11 +118,7 @@ return view.extend({
         }
         
         var style = E('style', { 'id': 'netwizard-mode-styles' }, `
-            .mode-selection-container {
-                max-width: 1000px;
-                margin: 20px auto;
-                padding: 20px
-            }
+
             
             .mode-grid {
                 display: flex;
@@ -134,13 +130,14 @@ return view.extend({
             
             .mode-card {
                 border-radius: 8px;
-                padding: 25px;
+                padding: 5rem 1rem;
                 cursor: pointer;
                 transition: all 0.3s;
                 text-align: center;
                 flex: 1;
                 min-width: 200px;
-                max-width: 250px;
+                max-width: 200px;
+                box-shadow: 0 0.1rem 0.3rem var(--input-boxcolor);
                 display: flex;
                 flex-direction: column;
                 align-items: center;
@@ -220,7 +217,7 @@ return view.extend({
             .mode-title {
                 font-size: 16px;
                 font-weight: 600;
-                margin-bottom: 10px;
+                margin-top: 10px;
                 text-align: center;
             }
             
@@ -387,7 +384,7 @@ return view.extend({
             }, [
                 iconDiv,
                 E('div', { 'class': 'mode-title' }, self.getModeTitle(mode.id)),
-                E('div', { 'class': 'mode-description' }, self.getModeDescription(mode.id))
+                // E('div', { 'class': 'mode-description' }, self.getModeDescription(mode.id))
             ]);
             
             card.addEventListener('click', function() {
