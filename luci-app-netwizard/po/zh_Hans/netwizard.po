@@ -1,0 +1,244 @@
+msgid ""
+msgstr ""
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+msgid "Netwizard"
+msgstr "设置向导"
+
+msgid "Quick Network Setup Wizard"
+msgstr "快速网络设置向导"
+
+msgid "Quick network setup wizard. If you need more settings, please enter network - interface to set."
+msgstr "快速网络设置向导。如需更多设置，请进入网络-接口 页面进行设置。"
+
+msgid "Network Mode"
+msgstr "网络模式"
+
+msgid "WAN Settings"
+msgstr "网络设置"
+
+msgid "Wireless Settings"
+msgstr "无线设置"
+
+msgid "Set the router's wireless name and password. For more advanced settings, please go to the Network-Wireless page."
+msgstr "设置路由器的无线名称和密码。如需更多高级设置，请前往网络-无线页面。"
+
+msgid "Other Settings"
+msgstr "其他设置"
+
+msgid "Select Network Connection Mode"
+msgstr "选择网络连接模式"
+
+msgid "Choose the connection mode that matches your network environment:"
+msgstr "选择与您的网络环境匹配的连接模式："
+
+msgid "PPPoE Dial-up"
+msgstr "PPPoE拨号"
+
+msgid "For ADSL or fiber broadband with username/password"
+msgstr "适用于需要用户名/密码的 ADSL 或光纤宽带"
+
+msgid "DHCP Client"
+msgstr "连接到路由器"
+
+msgid "Connect to router and automatically obtain IP via DHCP"
+msgstr "连接到路由器并通过 DHCP 自动获取 IP"
+
+msgid "Side Router"
+msgstr "旁路路由"
+
+msgid "Configure as side router in same network as main router"
+msgstr "配置为与主路由器在同一网络中的旁路路由"
+
+msgid "Network connection mode"
+msgstr "网络连接协议模式"
+
+msgid "Current Network Mode"
+msgstr "当前网络协议模式"
+
+msgid "Go to WAN Settings"
+msgstr "去设置网络参数"
+
+msgid "Change Mode"
+msgstr "更改协议模式"
+
+msgid "Network protocol mode selection"
+msgstr "网络协议模式选择"
+
+msgid "Three different ways to access the Internet, please choose according to your own situation."
+msgstr "三种不同的上网方式，请根据自身情况选择。"
+
+msgid "DHCP client (Connect to the router)"
+msgstr "DHCP 客户端（连接到路由器）"
+
+msgid "PPPoE dialing (Main route dial-up)"
+msgstr "PPPoE 拨号（主路由拨号）"
+
+msgid "SideRouter (Same network as the main router)"
+msgstr "旁路路由器（与主路由器在同一网络）"
+
+msgid "LAN IP Address Mode"
+msgstr "LAN IP 地址模式"
+
+msgid "Choose how to get IP address for LAN interface"
+msgstr "选择 LAN 接口获取 IP 地址的方式"
+
+msgid "Static IP address (Specify non conflicting IP addresses)"
+msgstr "静态 IP 地址（指定非冲突的 IP 地址）"
+
+msgid "DHCP client (Main router assigns IP)"
+msgstr "DHCP 客户端（主路由器分配 IP）"
+
+msgid "WAN interface IP address mode"
+msgstr "WAN 接口 IP 地址模式"
+
+msgid "Choose how to get IP address for WAN interface"
+msgstr "选择 WAN 接口获取 IP 地址的方式"
+
+msgid "Static address(Connect to the router)"
+msgstr "静态地址（连接到路由器）"
+
+msgid "DHCP client(Connect to the router)"
+msgstr "DHCP 客户端（连接到路由器）"
+
+msgid "LAN IPv4 Address"
+msgstr "LAN口IPv4地址"
+
+msgid "You must specify the IP address of this machine, which is the IP address of the web access route"
+msgstr "您必须指定本机的 IP 地址，即 Web 访问路由的 IP 地址"
+
+msgid "LAN IPv4 Netmask"
+msgstr "LAN口IPv4子网掩码"
+
+msgid "LAN IPv4 Gateway"
+msgstr "LAN口IPv4网关"
+
+msgid "Please enter the main routing IP address. The bypass gateway is not the same as the login IP of this bypass WEB and is in the same network segment"
+msgstr "请输入主路由IP地址。旁路网关并非本旁路WEB登录IP，且处于同一网段"
+
+msgid "Use Custom SideRouter DNS"
+msgstr "使用自定义旁路由DNS"
+
+msgid "Ali DNS: 223.5.5.5"
+msgstr "阿里 DNS：223.5.5.5"
+
+msgid "Baidu DNS: 180.76.76.76"
+msgstr "百度 DNS：180.76.76.76"
+
+msgid "114 DNS: 114.114.114.114"
+msgstr "114 DNS：114.114.114.114"
+
+msgid "Google DNS: 8.8.8.8"
+msgstr "谷歌 DNS：8.8.8.8"
+
+msgid "Cloudflare DNS: 1.1.1.1"
+msgstr "Cloudflare DNS：1.1.1.1"
+
+msgid "Device"
+msgstr "设备"
+
+msgid "Allocate the physical interface of WAN port"
+msgstr "分配 WAN 口的物理接口"
+
+msgid "PAP/CHAP Username"
+msgstr "PAP/CHAP 用户名"
+
+msgid "PAP/CHAP Password"
+msgstr "PAP/CHAP 密码"
+
+msgid "WAN IPv4 Address"
+msgstr "WAN IPv4 地址"
+
+msgid "WAN IPv4 Netmask"
+msgstr "WAN IPv4 子网掩码"
+
+msgid "WAN IPv4 Gateway"
+msgstr "WAN IPv4 网关"
+
+msgid "Use Custom WAN DNS"
+msgstr "使用自定义 WAN DNS"
+
+msgid "Enable IPv6"
+msgstr "启用 IPv6"
+
+msgid "Disable DHCP Server"
+msgstr "禁用 DHCP 服务器"
+
+msgid "Selecting means that the DHCP server is not enabled. In a network, only one DHCP server is needed to allocate and manage client IPs. If it is a secondary route, it is recommended to turn off the primary routing DHCP server."
+msgstr "选择意味着不启用 DHCP 服务器。在一个网络中，只需要一个 DHCP 服务器来分配和管理客户端 IP。如果是二级路由，建议关闭主路由的 DHCP 服务器。"
+
+msgid "Enable DNS Notifications (IPv4/IPv6)"
+msgstr "启用 DNS 通知（IPv4/IPv6）"
+
+msgid "Forcefully specify the DNS server for this router"
+msgstr "强制指定此路由器的 DNS 服务器"
+
+msgid "DNS"
+msgstr "DNS服务器"
+
+msgid "Use local IP for DNS (default)"
+msgstr "使用本地 IP 作为 DNS（默认）"
+
+msgid "Forcefully Forwarding"
+msgstr "强制转发"
+
+msgid "Forcefully add LAN to WAN forwarding"
+msgstr "强制添加 LAN 到 WAN 的转发"
+
+msgid "Redirect to HTTPS"
+msgstr "重定向到 HTTPS"
+
+msgid "Enable automatic redirection of HTTP requests to HTTPS port."
+msgstr "启用自动将 HTTP 请求重定向到 HTTPS 端口。"
+
+msgid "<abbr title=\"Extended Service Set Identifier\">ESSID</abbr>"
+msgstr "<abbr title=\"扩展服务集标识符\">ESSID</abbr>"
+
+msgid "Key"
+msgstr "密钥"
+
+msgid "Enable SYN-flood Defense"
+msgstr "启用 SYN 洪水防御"
+
+msgid "Enable Firewall SYN-flood defense [Suggest opening]"
+msgstr "启用防火墙 SYN 洪水防御 [建议开启]"
+
+msgid "Configuration Applied Successfully!"
+msgstr "配置应用成功！"
+
+msgid "The network configuration has been saved and applied."
+msgstr "网络配置已保存并应用。"
+
+msgid "New LAN IP Address:"
+msgstr "新的 LAN IP 地址："
+
+msgid "The page will automatically redirect in"
+msgstr "页面将在"
+
+msgid "seconds..."
+msgstr "秒后转向新地址..."
+
+msgid "Redirect Now"
+msgstr "立即转向新地址"
+
+msgid "Redirecting to"
+msgstr "转向新地址"
+
+msgid "Failed to redirect to"
+msgstr "无效重定向"
+
+msgid "\nPlease manually access:\n"
+msgstr "\n请手动访问：\n"
+
+msgid "Applying network configuration..."
+msgstr "正在应用网络配置..."
+
+msgid "Saving configuration..."
+msgstr "正在保存配置..."
+
+msgid "Configuration saved successfully!"
+msgstr "配置保存成功！"
+
+msgid "Failed to save configuration"
+msgstr "保存配置失败"
