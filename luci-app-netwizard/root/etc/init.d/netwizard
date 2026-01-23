@@ -331,7 +331,7 @@ configure_network() {
             [ "x$forwarding" = "x1" ] && {
                 setforwarding
                 [ "x$ipv6" = "x1" ] &&  { 
-                set firewall.@forwarding[-1].family='ipv6' 
+                uci -q set firewall.@forwarding[-1].family='ipv6' 
 		}
 	    }
             [ "x$ipv6" = "x1" ] && setipv6 1 || setipv6 0
