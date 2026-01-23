@@ -37,7 +37,13 @@ setipv6() {
                 delete dhcp.lan.dns
 		delete network.globals.ula_prefix
                 delete dhcp.lan.ra
-		delete dhcp.lan.dhcpv6
+                delete dhcp.lan.ra_default
+                delete dhcp.lan.ra_slaac
+                delete dhcp.lan.dhcpv6
+                delete dhcp.lan.ra_flags
+                delete dhcp.wan.ra
+                delete dhcp.wan.ndp
+                delete dhcp.wan.ra_flags
                 add_list dhcp.wan.ra_flags='none'
                 set network.lan.delegate='0'
                 set network.wan.ipv6='0'
@@ -61,6 +67,12 @@ EOF
                 delete dhcp.wan.ra_flags
 
 
+                delete network.wan6.sourcefilter
+                delete network.wan6.delegate
+                set network.wan6.extendprefix='1'
+                set network.lan.ip6ifaceid='eui64'
+                delete network.wan6.reqaddress='try'
+                set network.wan6.reqprefix='auto'
                 set dhcp.wan6.master='1'
                 set dhcp.wan6.ra='relay'
                 set dhcp.wan6.dhcpv6='relay'
@@ -77,8 +89,13 @@ EOF
                 set dhcp.lan6=dhcp
                 set dhcp.lan6.interface='lan6'
                 set dhcp.lan6.ignore='1'
+                set network.lan.ip6assign='64'
+                set network.lan6.extendprefix='1'
+                set network.lan.ip6ifaceid='eui64'
                 del network.lan6.delegate
                 set network.lan6.reqaddress='try'
+                set network.lan6.reqprefix='auto'
+                set network.lan6.norelease='1'
                 set dhcp.lan6.master='1'
                 set dhcp.lan6.ra='relay'
                 set dhcp.lan6.dhcpv6='relay'
@@ -90,6 +107,7 @@ EOF
                 set dhcp.lan.ra='hybrid'
                 set dhcp.lan.dhcpv6='hybrid'
                 set dhcp.lan.ndp='relay'
+                set dhcp.lan.ra_management='1'
 		del network.lan.delegate
 		set network.wan.ipv6='0'
 		del network.wan.delegate
@@ -98,6 +116,10 @@ EOF
 
                 delete dhcp.wan.master
                 delete dhcp.wan.ra_flags
+                delete network.wan6.sourcefilter
+                delete network.wan6.delegate
+                set network.wan6.extendprefix='1'
+                set network.lan.ip6ifaceid='eui64'
                 set dhcp.wan6.master='1'
                 set dhcp.wan6.ra='relay'
                 set dhcp.wan6.dhcpv6='relay'
@@ -309,9 +331,6 @@ configure_network() {
             [ "x$forwarding" = "x1" ] && {
                 setforwarding
                 [ "x$ipv6" = "x1" ] &&  { 
-		add firewall forwarding
-                set firewall.@forwarding[-1].src='lan'
-                set firewall.@forwarding[-1].dest='wan'
                 set firewall.@forwarding[-1].family='ipv6' 
 		}
 	    }
