@@ -7,6 +7,8 @@
 
 ## git clone  https://github.com/sirpdboy/luci-app-wizard
 
+## 注意：设置向导会清空当前路由的已配置清单,谨慎安装.
+
 ## 2026.1.14  设置向导 更新日志：
 
 - 1. 全新开发升级设置向导 v2.1.0 JS  for openwrt25.12
